@@ -9,7 +9,7 @@ const email_error = document.getElementById('email_error');
 const password_error = document.getElementById('password_error');
 const message_error = document.getElementById('message_error');
 
-function buttonSelection(sectionId){
+function scrollToSection(sectionId) {
     event.preventDefault(); // Prevent default link behavior
     const targetSection = document.getElementById(sectionId);
     if (targetSection) {
