@@ -9,6 +9,10 @@ const email_error = document.getElementById('email_error');
 const password_error = document.getElementById('password_error');
 const message_error = document.getElementById('message_error');
 
+function buttonSelection(sectionId){
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth'});
+}
+
 form.addEventListener('submit',(e)=>{
 
     var email_check = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+([A-za-z]{2,4})$/;
