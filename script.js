@@ -10,7 +10,14 @@ const password_error = document.getElementById('password_error');
 const message_error = document.getElementById('message_error');
 
 function buttonSelection(sectionId){
-    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth'});
+    event.preventDefault(); // Prevent default link behavior
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+        window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: "smooth"
+        });
+    }
 }
 
 form.addEventListener('submit',(e)=>{
