@@ -16,6 +16,7 @@ body{
     background-color: var(--background-color);
     max-width: 1400px;
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 a{
     color: var(--link-color);
